@@ -31,7 +31,7 @@ authors:
   - John Doe
 ```
 
-3. Define list of authors in blog post:
+3. Define list of authors in blog post using the author ids defined in `_data/authors`:
 
 ```
 authors :

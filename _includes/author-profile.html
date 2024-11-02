@@ -3,8 +3,8 @@
 <div itemscope itemtype="https://schema.org/Person" class="h-card">
 
   {% for authorid in authors %}
-  {{authorid}}
-
+  {% assign author = site.data.authors[authorid] %}
+  {{author}}
 
       {% endfor %}	
     </ul>

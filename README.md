@@ -1,3 +1,44 @@
+Fork of the Minimal Mistakes Jekyll theme.
+
+Changes compared to the [original theme](https://mmistakes.github.io/minimal-mistakes/):
+
+- Multi-author suppport: display user profiles of multiple authors (more than one) per post 
+
+To use this theme in a GitHub page, define `remote_theme` in `_config.yml` as follows:
+
+```
+remote_theme: duerrfk/minimal-mistakes@multiauthor
+```
+
+1. You must define all authors in the file `_data/authors` (same format as for original theme):
+
+```
+John Doe :
+  name : "John Doe"
+  bio : "John's bio"
+  avatar : "/assets/images/john_doe.jpg"	
+
+Mickey Mouse :
+  name : "Mickey Mouse"
+  bio : "Mickey's bio"
+  avatar : "/assets/images/mickey_mouse.jpg"
+```
+
+2. Define the default list of authors in `_config.yml` using the author ids defined in `_data/authors`:
+
+```
+authors:
+  - John Doe
+```
+
+3. Define list of authors in blog post:
+
+```
+authors :
+  - John Doe
+  - Mickey Mouse
+```
+
 # [Minimal Mistakes Jekyll theme](https://mmistakes.github.io/minimal-mistakes/)
 
 [![LICENSE](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/mmistakes/minimal-mistakes/master/LICENSE)

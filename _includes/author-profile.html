@@ -3,7 +3,7 @@
 <div itemscope itemtype="https://schema.org/Person" class="h-card">
 
   {% for authorid in authors %}
-  {% assign author = site.data.authors[authorid.author] | default: authorid %}
+  {% assign author = site.data.authors[authorid] %}
   
   {% if author.avatar %}
     <div class="author__avatar">
